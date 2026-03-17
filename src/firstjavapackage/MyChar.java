@@ -31,11 +31,22 @@ public class MyChar {
         return false;
     }
 
+    public boolean isConsonant() {
+        char[] vowels = {'a','e','i','o','u','A','E','I','O','U'};
+        for(int i=0; i<vowels.length; i++) {
+            if (vowels[i] != ch) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean isDigit() {
         return ch >=48 && ch<=57;
     }
 
     public boolean isAlphabets() {
+
         return (ch>='a' && ch<='z') || (ch>='A' && ch<='Z');
     }
 }

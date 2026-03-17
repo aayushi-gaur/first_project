@@ -10,5 +10,7 @@ public class MyCharRunner {
         System.out.println(myChar.isAlphabets());
         MyChar.printLowerCaseAlphabets();
         MyChar.printUpperCaseAlphabets();
+        System.out.println(myChar.isConsonant());
+
     }
 }
