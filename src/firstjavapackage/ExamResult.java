@@ -2,6 +2,7 @@ package firstjavapackage;
 
 public class ExamResult {
 
+    //Method to check is student passed
     public boolean isPass(int marks) {
 
         /*if(marks >= 50) {
@@ -13,8 +14,10 @@ public class ExamResult {
         return marks >= 50;
     }
 
+    //instance variable
     private int marks;
 
+    //Constructor
     public ExamResult() {
 
     }
@@ -23,6 +26,7 @@ public class ExamResult {
         this.marks = marks;
     }
 
+    //Method to get grades for marks received
     public char assignGrade() {
         // TODO: Implement the method which assigns the grade based on marks.
         if(marks < 0 || marks > 100) {

@@ -1,10 +1,14 @@
 package firstjavapackage;
 
-public class Dimension {
+public class Geometry {
         private int feet;
         private int inches;
 
-        public Dimension(int inches) {
+        //Constructor
+        public Geometry() {
+
+        }
+        public Geometry(int inches) {
             // TODO: Convert the total inches into feet and inches. One foot is 12 inches.
             // Store the feet and inches in their respective instance variables.
             if (inches < 0) {
@@ -26,4 +30,5 @@ public class Dimension {
             // TODO: Return the value of inches.
             return this.inches;
         }
+
     }
