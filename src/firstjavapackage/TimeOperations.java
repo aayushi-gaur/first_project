@@ -2,7 +2,7 @@ package firstjavapackage;
 
 import java.util.Scanner;
 
-public class TimeIfElse {
+public class TimeOperations {
 
     private static int dayNumber = 0, monthNumber=0;
     static Scanner scanner =new Scanner(System.in);
@@ -111,4 +111,19 @@ public class TimeIfElse {
             return false;
         }
     }
+
+    public static int convertHoursToMinutes(int hours) {
+        if (hours < 0) {
+            return -1;
+        }
+        return hours * 60;
+    }
+
+    public static int convertDaysToMinutes(int days) {
+        if (days < 0) {
+            return -1;
+        }
+        return days * 24 * 60;
+    }
+
 }
