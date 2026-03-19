@@ -21,10 +21,12 @@ public class Book {
 
     // increase and decrease number of books
     public void increaseNoOfCopies (int howMuch) {
+
         this.noOfCopies = this.noOfCopies + howMuch;
     }
 
     public void decreaseNoOfCopies (int howMuch) {
+
         this.noOfCopies = this.noOfCopies - howMuch;
     }
 }
