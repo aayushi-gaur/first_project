@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class CalculatorRunner {
 
     public static void main(String[] args) {
-
+/*
         Calculator menu = new Calculator();
 
         //calculator
@@ -34,11 +34,20 @@ public class CalculatorRunner {
 
         //print sum of numbers upto N
         SumOfNNumbers sumN = new SumOfNNumbers();
-        sumN.printSumUptoN(10);
+        sumN.printSumUpToN(10);
 
         //print sum of divisors
         SumOfDivisors sumD = new SumOfDivisors(10);
         int sumOfDivisors = sumD.sumOfDivisors();
         System.out.println("Sum of divisors of 6 is " + sumOfDivisors);
+
+        //square of numbers upto a limit
+        SumOfSquares sqLimit = new SumOfSquares();
+        sqLimit.squareUpToLimit(30);*/
+
+        SumOfCubes  cubeLimit = new SumOfCubes();
+        cubeLimit.cubeUpToLimit(30);
+
+        cubeLimit.cubePrint();
     }
 }

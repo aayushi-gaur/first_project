@@ -12,4 +12,13 @@ public class SumOfSquares{
         }
         return sum;
     }
+
+    public void squareUpToLimit(int limit) {
+        int i=1;
+        while(i*i < limit){
+            System.out.println(i*i);
+            i++;
+        }
+
+    }
 }
