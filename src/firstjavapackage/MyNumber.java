@@ -52,4 +52,67 @@ public class MyNumber {
         n2 = n2 * 2;
     }
 
+    public int getLastDigit(int number) {
+        if (number == 0){
+            return 0;
+           }
+        else if (number < 0){
+            return -1;
+        }
+        else {
+            return number % 10;
+        }
+    }
+
+    public int getNumberOfDigits(int number) {
+        if (number == 0){
+            return 1;
+        }
+        else if (number < 0){
+            return -1;
+        }
+        int digits = 0;
+        int temp = number;
+        while (temp > 0) {
+            digits++;
+            temp = temp / 10;
+        }
+        return digits;
+    }
+
+    public int getSumOfDigits(int number) {
+        if (number == 0){
+            return 0;
+        }
+        else if (number < 0){
+            return -1;
+        }
+        int sum = 0;
+        int digit = 0;
+        int temp = number;
+        while (temp > 0) {
+            digit = temp % 10;
+            sum = sum + digit;
+            temp = temp / 10;
+        }
+        return sum;
+    }
+
+    public int reverseNumber(int number) {
+        if (number == 0){
+            return 0;
+        }
+        else if (number < 0){
+            return -1;
+        }
+        int reverse = 0;
+        int digit = 0;
+        int temp = number;
+        while (temp > 0) {
+            digit = temp % 10;
+            reverse = reverse * 10 + digit;
+            temp = temp / 10;
+        }
+        return reverse;
+    }
 }
