@@ -16,23 +16,26 @@ public class TimeOperations {
             case 0:
                 System.out.println("Sunday");
                 break;
-            case 2:
+            case 1:
                 System.out.println("Monday");
                 break;
-            case 3:
+            case 2:
                 System.out.println("Tuesday");
                 break;
-            case 4:
+            case 3:
                 System.out.println("Wednesday");
                 break;
-            case 5:
+            case 4:
                 System.out.println("Thursday");
                 break;
-            case 6:
+            case 5:
                 System.out.println("Friday");
                 break;
+            case 6:
+                System.out.println("Saturday");
+                break;
             default:
-                System.out.println("Thank You");
+                System.out.println("Invalid day number");
                 break;
         }
     }
@@ -43,7 +46,7 @@ public class TimeOperations {
         monthNumber = scanner.nextInt();
 
         switch (monthNumber) {
-            case 0:
+            case 1:
                 System.out.println("January");
                 break;
             case 2:
@@ -80,7 +83,7 @@ public class TimeOperations {
                 System.out.println("December");
                 break;
             default:
-                System.out.println("Thank You");
+                System.out.println("Invalid month number");
                 break;
         }
 
@@ -90,7 +93,7 @@ public class TimeOperations {
         System.out.print("Enter number of day: ");
         dayNumber = scanner.nextInt();
 
-        if (dayNumber >=1 || dayNumber <= 5) {
+        if (dayNumber >=1 && dayNumber <= 5) {
             System.out.println("The day is a weekday");
         }
         else {
