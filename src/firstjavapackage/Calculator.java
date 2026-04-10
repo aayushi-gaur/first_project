@@ -1,12 +1,11 @@
 package firstjavapackage;
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Calculator {
 
     private int n1=0, n2=0, choice=0;
-    Scanner scanner =new Scanner(System.in);
+    private final Scanner scanner =new Scanner(System.in);
 
     //constructor
     //initialize numbers and choice
@@ -27,7 +26,7 @@ public class Calculator {
     //calculator
     public void calculateWithIf() {
 
-        while (choice < 5) {
+        while (choice != 8) {
             if (choice == 1) {
                 System.out.println("Sum of n1 and n2 = " + sum(n1, n2));
             } else if (choice == 2) {
@@ -35,7 +34,11 @@ public class Calculator {
             } else if (choice == 3) {
                 System.out.println("Product of n1 and n2 = " + product(n1, n2));
             } else if (choice == 4) {
-                System.out.println("Dividend of n1 and n2 = " + divisor(n1, n2));
+                if (n2 == 0) {
+                    System.out.println("Cannot divide by zero!");
+                } else {
+                    System.out.println("Dividend of n1 and n2 = " + divisor(n1, n2));
+                }
             }
             else if(choice == 5) {
                 System.out.println("Factorial of n1 = " + calculateFactorial(n1));
@@ -44,8 +47,11 @@ public class Calculator {
             else if(choice == 6) {
                 System.out.println("LCM of n1 and n2 = " + calculateLCM());
             }
-            else if(choice == 8) {
+            else if(choice == 7) {
                 System.out.println("GCD of n1 and n2 = " + calculateGCD());
+            }
+            else {
+                System.out.println("Invalid choice");
             }
             System.out.print("Choose action: ");
             choice = scanner.nextInt();
@@ -57,7 +63,7 @@ public class Calculator {
     //calculator using switch
     public void calculatewithSwitch() {
 
-        while(choice < 5) {
+        while(choice != 8) {
 
             switch (choice) {
 
@@ -88,6 +94,9 @@ public class Calculator {
                     System.out.println("GCD of n1 and n2 = " + calculateGCD());
                     break;
                 case 8:
+                    break;
+                default:
+                    System.out.println("Invalid choice");
                     break;
             }
 

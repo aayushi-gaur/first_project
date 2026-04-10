@@ -5,12 +5,15 @@ public class PrimeNumber {
     //Method to check is a number is prime
     public void isPrime(int number) {
 
-        int i=1;
+        if (number <= 1) {
+            System.out.println("Number is not prime");
+            return;
+        }
 
-        for( ; i<number; i++){
+        for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) {
                 System.out.println("Number is not prime");
-                return ;
+                return;
             }
         }
 
