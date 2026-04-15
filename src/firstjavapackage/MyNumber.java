@@ -1,5 +1,8 @@
 package firstjavapackage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyNumber {
 
     private int n1=0, n2=0;
@@ -114,5 +117,45 @@ public class MyNumber {
             temp = temp / 10;
         }
         return reverse;
+    }
+
+    /**
+     * This method returns all factors of a given number in an ArrayList.
+     *
+     * @param number the number to find factors of
+     * @return a List of factors of the number
+     */
+    public List<Integer> determineAllFactors(int number) {
+
+        // TODO: Write your code here
+        int i;
+        ArrayList<Integer> factors = new ArrayList<Integer>();
+        for(i=1; i<=number; i++) {
+            if(number % i == 0) {
+                factors.add(i);
+            }
+        }
+        return factors;
+    }
+
+    /**
+     * This method generates a list of multiples of a given number less than a specified limit.
+     *
+     * @param number the number to find multiples of
+     * @param limit the upper bound for the multiples
+     * @return a List of multiples of the number less than the limit
+     */
+    public List<Integer> determineMultiples(int number, int limit) {
+
+        // TODO: Write your code here
+
+        if(number<=0 || limit <= 0) {
+            return new ArrayList<Integer>();
+        }
+        ArrayList<Integer> multiples = new ArrayList<Integer>();
+        for (int i = number; i < limit; i += number) {
+            multiples.add(i);
+        }
+        return multiples;
     }
 }
