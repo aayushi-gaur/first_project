@@ -11,10 +11,9 @@ public class StringMagicRunner {
 
         System.out.println(stringMagic.hasConsecutiveDuplicates("helo"));
 
-        System.out.println(stringMagic.getRightmostDigit("-12345"));
+        System.out.println(stringMagic.getRightMostDigit("-12345"));
 
-
-
+        stringMagic.dayOfTheWeekArray();
     }
 
 }

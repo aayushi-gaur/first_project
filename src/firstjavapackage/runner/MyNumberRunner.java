@@ -9,7 +9,7 @@ public class MyNumberRunner {
     public static void main (String[] args) {
 
         MyNumber number = new MyNumber(2,3);
-        System.out.println(number.add());
+        /*System.out.println(number.add());
         System.out.println(number.multiply());
         number.doubleN1N2();
         System.out.println(number.getN1());
@@ -26,6 +26,8 @@ public class MyNumberRunner {
         //check if number is prime
         PrimeNumber noPrime = new PrimeNumber();
          noPrime.isPrime(7);
-         noPrime.isPrime(10);
+         noPrime.isPrime(10);*/
+
+        System.out.println(number.determineMultiples(5,25));
     }
 }

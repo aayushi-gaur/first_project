@@ -89,7 +89,7 @@ public class StringMagic {
      * @param str The string to find the rightmost digit in.
      * @return The rightmost digit in the string. If no digit is found, return -1.
      */
-    public int getRightmostDigit(String str) {
+    public int getRightMostDigit(String str) {
 
         // TODO: Write your code here
         int i;
@@ -103,4 +103,36 @@ public class StringMagic {
         }
         return -1;
     }
+
+    /**
+     * This method finds the longest word in a given sentence.
+     *
+     * @param sentence The sentence to find the longest word in.
+     * @return The longest word in the sentence. If sentence is empty, return an empty string.
+     */
+    public String findLongestWord(String sentence) {
+        String longestWord = "";
+        if (sentence.isEmpty()) {
+            return longestWord;
+        }
+        String[] words = sentence.trim().split("\\s+");
+        for (String word: words) {
+            if(word.length() > longestWord.length()) {
+                longestWord = word;
+            }
+        }
+        return longestWord;
+    }
+
+    public void dayOfTheWeekArray () {
+        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        String dayMostNumberOfChar = "";
+        for (String day: days) {
+            if (day.length() > dayMostNumberOfChar.length()) {
+                dayMostNumberOfChar = day;
+            }
+        }
+        System.out.println(dayMostNumberOfChar);
+    }
+
 }
