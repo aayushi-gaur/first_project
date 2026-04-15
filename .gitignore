@@ -33,4 +33,3 @@ bin/
 
 ### Java build artifacts ###
 *.class
-out_test/
